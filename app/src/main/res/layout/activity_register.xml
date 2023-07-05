@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="50sp"
+
+        android:hint="username"
+
+
+        app:layout_constraintTop_toBottomOf="@id/register_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+
+        android:inputType="phone"
+        android:hint="phone"
+
+
+        app:layout_constraintTop_toBottomOf="@id/register_username"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+
+        android:inputType="textPassword"
+        android:hint="password"
+
+
+        app:layout_constraintTop_toBottomOf="@id/register_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/register_password_confirm"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+
+        android:inputType="textPassword"
+        android:hint="confirm password"
+
+
+        app:layout_constraintTop_toBottomOf="@id/register_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/login_redirect_button"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+
+        android:text="Already have an account? Login"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toBottomOf="@+id/register_redirect_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/register_redirect_button"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="100sp"
+
+        android:text="Register"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
